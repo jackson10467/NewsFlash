@@ -34,6 +34,6 @@ Post MVP objectives:
 
 # Wireframes
 
-[Homepage](https://wireframe.cc/q1i61G)
-[Category Page](https://wireframe.cc/FjB1MX)
-[Mobile (All)](https://wireframe.cc/8a)
+- [Homepage](https://wireframe.cc/q1i61G)
+- [Category Page](https://wireframe.cc/FjB1MX)
+- [Mobile (All)](https://wireframe.cc/8a)
