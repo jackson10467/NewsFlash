@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from "axios"
+import Nav from "./stories/nav/nav"
+import Home from "./home"
+import {Route, Link} from "react-router-dom"
 
 class App extends Component{
   constructor(props) {
@@ -24,7 +27,14 @@ class App extends Component{
   
   render() {
     return (
-    <h1>Check console for data</h1>
+      <div>
+      <Nav link1="categories" link2="search" link3="test"></Nav>
+      <Route exact path="/" render={RouterProps => 
+        <Home data={this.state.data} {...RouterProps}/> 
+        } />
+      </div>
+      
+
   )
 }
 
