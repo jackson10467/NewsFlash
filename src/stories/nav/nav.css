@@ -6,7 +6,7 @@
   background-color: #3769EA;
   height: 6vh;
   margin: 0;
-  overflow: auto;
+  overflow: hidden;
   position: fixed;
   width: 100%;
   top: 0;
@@ -21,7 +21,7 @@
   background-color: #3769EA;
   height: 8vh;
   margin: 0;
-  overflow: auto;
+  overflow: hidden;
   position: fixed;
   width: 100%;
   top: 5%;

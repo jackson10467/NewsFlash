@@ -19,7 +19,11 @@ class Home extends Component {
     else {
       return (
         <>
-          <div>{this.props.data.map((article,idx) => (
+          <div className="heading">
+          <h1>Your news, in a flash!</h1>
+          <h2>Top Headlines</h2>
+          </div>
+          <div>{this.props.data.map((article, idx) => (
             <div className="wrapper">
               <Link  to={"/profile/" + article.title}><img className="img" src={article.urlToImage}></img></Link>
               
