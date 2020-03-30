@@ -1,0 +1,37 @@
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #3769EA;
+  height: 15vh;
+  margin: 0;
+  overflow: auto;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.nav img{
+  max-width: 50px;
+  min-height: 50px;
+}
+
+.title{
+  text-decoration: none;
+  color: white;
+  background-color: #3769EA;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 25;
+  border: 2px;
+  border-color: transparent;
+  transition: background-color 0.4s;
+}
+
+.title:hover {
+  background-color: #296CCD;
+  color: white;
+  border-radius: 20%;
+}
