@@ -20,11 +20,14 @@ class Home extends Component {
       return (
         <>
           <div>{this.props.data.map((article,idx) => (
-            <>
-              <Link className="text-content" to={"/profile/" + article.title}>{article.title}</Link>
-              <Link className="img" to={"/profile/" + article.title}><img src={article.urlToImage}></img></Link>
+            <div className="wrapper">
+              <Link  to={"/profile/" + article.title}><img className="img" src={article.urlToImage}></img></Link>
+              
+              <div className="textWrapper">
+              <Link to={"/profile/" + article.title}><h2 className="text-content">{article.title}</h2></Link>
               <p>{article.description}</p>
-            </>
+              </div>
+            </div>
           ))}</div>
         </>
       )

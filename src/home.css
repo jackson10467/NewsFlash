@@ -1,4 +1,18 @@
 .img{
-  width:250px;
-  height:250px;
+  width:350px;
+  height:300px;
+}
+
+.text-content{
+  text-decoration: none;
+  color:black;
+}
+.wrapper{
+  display:flex;
+  margin:5%;
+}
+.textWrapper{
+  display: flex;
+  flex-direction: column;
+  margin:5%;
 }
