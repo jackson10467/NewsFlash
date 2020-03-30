@@ -18,9 +18,9 @@ NewsFlash is the name of my project, planned to be a react based website that pr
 | Category Page(s) Component | 3 |
 | Article Page Component | 4 |
 | Search Results Component | 5.0|
-| Links Component (**Storybook**) | 5|
-| Input Component (**Storybook**) | 5.1|
-| Button Component (**Storybook**) | 5.2|
+| Links Component (**Storybook**) | 5.1|
+| Input Component (**Storybook**) | 5.2|
+| Button Component (**Storybook**) | 5.3|
 | Footer Component (**Storybook**) | 6|
 
 
