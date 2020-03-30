@@ -1,6 +1,7 @@
 # NewsFlash
 
 ![sneakybreeki](https://media.giphy.com/media/29LhYccMwggSI/giphy.gif)
+
 NewsFlash is the name of my project, planned to be a react based website that provides news on a selection of topics as well as topics that the user can search for.
 
 # MVP
