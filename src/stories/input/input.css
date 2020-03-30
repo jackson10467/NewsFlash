@@ -1,0 +1,14 @@
+.primary {
+  width: 20%;
+  height: 60%;
+  padding: 1em;
+  margin: 2vh;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  transition: width 0.3s;
+}
+
+.primary:focus {
+  width: 30%;
+  outline: none;
+}
