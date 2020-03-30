@@ -28,7 +28,7 @@ class App extends Component{
   render() {
     return (
       <div>
-      <Nav link1="categories" link2="search" link3="test"></Nav>
+      <Nav link1="Tech" link2="Business" link3="Health" link4="Search" link5="More"></Nav>
       <Route exact path="/" render={RouterProps => 
         <Home data={this.state.data} {...RouterProps}/> 
         } />

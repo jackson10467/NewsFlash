@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Link } from 'react-router-dom';
-import './App.css';
+import './home.css';
 // import axios from "axios"
 
 class Home extends Component {
@@ -22,7 +22,7 @@ class Home extends Component {
           <div>{this.props.data.map((article,idx) => (
             <>
               <Link className="text-content" to={"/profile/" + article.title}>{article.title}</Link>
-              <Link  className="img" to={"/profile/" + article.title}><img src={article.urlToImage}></img></Link>
+              <Link className="img" to={"/profile/" + article.title}><img src={article.urlToImage}></img></Link>
               <p>{article.description}</p>
             </>
           ))}</div>
