@@ -10,6 +10,7 @@ NewsFlash is the name of my project, planned to be a react based website that pr
 
 - React Router to link pages together![
 - 6 seperate rendered components (In my case this will be different categories of news)
+
 |App.js|  |
 |-|--|
 | Nav Component (**Storybook**) | 1 | 
@@ -21,6 +22,8 @@ NewsFlash is the name of my project, planned to be a react based website that pr
 | Input Component (**Storybook**) | 5.1|
 | Button Component (**Storybook**) | 5.2|
 | Footer Component (**Storybook**) | 6|
+
+
 - React File structure will be neat (Hopefully)
 - Axios will be used to get data from [NewsAPI](https://newsapi.org/)
 - Storybook will be used to create some reusable components
