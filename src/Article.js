@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./article.css"
 
 class Category extends Component{
   constructor(props) {
@@ -13,18 +14,24 @@ class Category extends Component{
     console.log(this.props.data)
     if (this.props.data != null) {
       let parkDetails = this.props.data.filter(article => article.title === this.props.match.params.id)[0];
-      console.log(parkDetails)
+      console.log(parkDetails);
+      return (
+        <div className="articleWrap">
+        <img className="artImg"src={parkDetails.urlToImage} />
+        <div className="articleText">
+        <h2>{parkDetails.description}</h2>
+        <p>{parkDetails.content}</p>
+        </div>
+        </div>
+
+      )
     }
 
                return (
                 <>
                  <div>
-                  <h1>This Park is: {this.props.match.params.id}</h1>
-                     {/* <img src={parkDetails.images[0].url} />
-                     <h2>{parkDetails.description}</h2>
-                     <br></br>
-                     <h3>Weather</h3>
-                     <p>{parkDetails.weatherInfo}</p> */}
+                  <h1>{this.props.match.params.id}</h1>
+ 
                    </div>
                    </>
           

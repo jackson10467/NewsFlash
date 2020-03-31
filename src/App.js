@@ -4,7 +4,7 @@ import './App.css';
 import axios from "axios"
 import Nav from "./stories/nav/nav"
 import Home from "./home"
-import Category from "./categories"
+import Category from "./Article"
 import {Route, Link} from "react-router-dom"
 
 class App extends Component{
