@@ -4,6 +4,7 @@ import './App.css';
 import axios from "axios"
 import Nav from "./stories/nav/nav"
 import Home from "./home"
+import Category from "./categories"
 import {Route, Link} from "react-router-dom"
 
 class App extends Component{
@@ -31,6 +32,9 @@ class App extends Component{
       <Nav link1="Tech" link2="Business" link3="Health" link4="Search" link5="More"></Nav>
       <Route exact path="/" render={RouterProps => 
         <Home data={this.state.data} {...RouterProps}/> 
+        } />
+      <Route exact path="/category/:id" render={RouterProps => 
+        <Category data={this.state.data} {...RouterProps}/> 
         } />
       </div>
       

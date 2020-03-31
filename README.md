@@ -51,3 +51,9 @@ Post MVP objectives:
 - [Homepage](https://wireframe.cc/q1i61G)
 - [Category Page](https://wireframe.cc/FjB1MX)
 - [Mobile (All)](https://wireframe.cc/8a)
+
+# To Do 
+- category page
+- Storybook Components
+- Search functionality
+- Base stylng for above ^
