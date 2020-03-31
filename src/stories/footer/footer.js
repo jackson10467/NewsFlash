@@ -5,7 +5,7 @@ import "./footer.css"
 const Footer = () => (
   <>  
   <div className="footer">
-    <h3></h3>  
+    <h3>Powered by News API</h3>  
   </div>
   </>
 )
