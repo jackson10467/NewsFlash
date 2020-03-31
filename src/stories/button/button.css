@@ -1,0 +1,16 @@
+button {
+  border-radius: 2px;
+  padding: 10px 25px;
+}
+.search{
+  background-color:#3769EA ;
+  color:white;
+  transition: background-color 0.4s;
+
+}
+.search:hover {
+  background-color: white;
+  color: #3769EA;
+  border: 2px solid #3769EA;
+  cursor: pointer;
+}
