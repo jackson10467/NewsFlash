@@ -1,9 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Nav from './nav.js';
-import { MemoryRouter } from 'react-router';
 import { Link } from 'react-router-dom';
-
+import { MemoryRouter } from 'react-router';
 
 
 

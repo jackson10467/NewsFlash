@@ -17,8 +17,8 @@ class App extends Component{
   }
 
   componentDidMount = async () => {
-    const npsURL= "https://newsapi.org/v2/top-headlines?country=us&apiKey=7be0f0e2220345a29fd31ddaaea0d8b2"
-    const response = await axios(npsURL);
+    const URL= "https://newsapi.org/v2/top-headlines?country=us&apiKey=7be0f0e2220345a29fd31ddaaea0d8b2"
+    const response = await axios(URL);
     console.log(response.data.articles[0].description);
     this.setState({
       data: response.data.articles
@@ -34,7 +34,7 @@ class App extends Component{
       <Route exact path="/" render={RouterProps => 
         <Home data={this.state.data} {...RouterProps}/> 
         } />
-      <Route exact path="/category/:id" render={RouterProps => 
+      <Route exact path="/article/:id" render={RouterProps => 
         <Category data={this.state.data} {...RouterProps}/> 
         } />
       <Footer/>

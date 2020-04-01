@@ -9,7 +9,8 @@
 .articleText{
   display: flex;
   flex-direction: column;
-  margin-bottom:20%;
+  margin-bottom:0%;
+  max-width: 70vw;
 }
 
 .artImg{
@@ -17,4 +18,8 @@
   max-height:650px;
   margin-top:10%;
   border:2px solid black
+}
+
+.but{
+  margin:0;
 }
