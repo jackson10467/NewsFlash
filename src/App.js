@@ -19,9 +19,12 @@ class App extends Component{
   componentDidMount = async () => {
     const URL= "https://newsapi.org/v2/top-headlines?country=us&apiKey=7be0f0e2220345a29fd31ddaaea0d8b2"
     const response = await axios(URL);
+    let filtered = response.data.articles.filter(article=>
+      !article.title.includes('%')
+    )
     console.log(response.data.articles[0].description);
     this.setState({
-      data: response.data.articles
+      data: filtered
     })
     console.log(this.state.data);
   };
