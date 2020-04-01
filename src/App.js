@@ -4,7 +4,8 @@ import './App.css';
 import axios from "axios"
 import Nav from "./stories/nav/nav"
 import Home from "./home"
-import Category from "./Article"
+import Article from "./Article"
+import Category from "./tech.js"
 import Footer from "./stories/footer/footer"
 import {Route, Link} from "react-router-dom"
 
@@ -33,13 +34,17 @@ class App extends Component{
   render() {
     return (
       <div>
-      <Nav link1="Tech" link2="Business" link3="Health" link4="Search" link5="More"></Nav>
+      <Nav link1="Tech" to1="/Tech" link2="Business" to2="/Business" link3="Health" to3="/Health" link4="Search" to4="Search"></Nav>
       <Route exact path="/" render={RouterProps => 
         <Home data={this.state.data} {...RouterProps}/> 
         } />
-      <Route exact path="/article/:id" render={RouterProps => 
-        <Category data={this.state.data} {...RouterProps}/> 
+      <Route path="/article/:id" render={RouterProps => 
+        <Article data={this.state.data} {...RouterProps}/> 
         } />
+      <Route path="/Tech" render={RouterProps => 
+        <Category category="technology"{...RouterProps}/> 
+        } />
+      
       <Footer/>
       </div>
       

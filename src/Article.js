@@ -3,7 +3,7 @@ import axios from "axios";
 import "./article.css";
 import Button from "./stories/button/button"
 
-class Category extends Component{
+class Article extends Component{
   constructor(props) {
     super(props)
     this.state = {
@@ -50,4 +50,4 @@ class Category extends Component{
   }
 
 
-export default Category
+export default Article
