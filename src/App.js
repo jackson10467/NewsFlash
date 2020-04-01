@@ -44,6 +44,12 @@ class App extends Component{
       <Route path="/Tech" render={RouterProps => 
         <Category category="technology"{...RouterProps}/> 
         } />
+      <Route path="/Business" render={RouterProps => 
+        <Category category="business"{...RouterProps}/> 
+        } />
+      <Route path="/Health" render={RouterProps => 
+        <Category category="health"{...RouterProps}/> 
+        } />
       
       <Footer/>
       </div>

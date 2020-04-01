@@ -37,7 +37,7 @@ class Category extends Component {
       return (
         <>
           <div className="heading">
-          <h2>Top Tech Headlines</h2>
+            <h2>Top {this.props.category} Headlines</h2>
           </div>
           <div>{this.state.data.map((article, idx) => (
             <div className="wrapper">
