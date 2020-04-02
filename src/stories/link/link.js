@@ -5,7 +5,7 @@ import "./link.css"
 const Link = (props) => (
   <>  
   <div className="link">
-      <a><h3>{props.text}</h3></a> 
+      <a href="https://newsapi.org/">{props.text}</a> 
   </div>
   </>
 )

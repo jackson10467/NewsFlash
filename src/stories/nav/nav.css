@@ -69,3 +69,15 @@
   color: white;
   border-radius: 20%;
 }
+
+@media only screen and (max-width: 600px) {
+.l{
+  font-size:0.8em;
+}
+.title{
+  font-size:0.5em;
+}
+}
+@media (min-width: 768px) and (max-width:968px){
+  
+}
