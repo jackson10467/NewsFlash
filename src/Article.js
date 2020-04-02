@@ -12,25 +12,26 @@ class Article extends Component{
   }
 
 
-
-
   render() {
     console.log(this.props.data)
     if (this.props.data != null) {
-      let article = this.props.data.filter(article => article.title === this.props.match.params.id)[0];
+      let article = this.props.data.filter(article => article.publishedAt === this.props.match.params.id)[0];
       console.log(article);
-
       let redirect = () => {
         window.location.assign(article.url);
       }
 
       return (
+        
         <div className="articleWrap">
-        <img className="artImg"src={article.urlToImage} />
-        <div className="articleText">
-        <h2>{article.description}</h2>
-        <p>{article.content}</p>
-          </div>
+          {this.props.data && article &&
+            <>
+            <img className="artImg" src={article.urlToImage} />
+            <div className="articleText">
+              <h2>{article.description}</h2>
+              <p>{article.content}</p>
+            </div></>
+            }
           <Button className="but" label="Read More" type="search" click={redirect}/>
         </div>
 

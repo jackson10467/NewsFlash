@@ -6,6 +6,7 @@ import Nav from "./stories/nav/nav"
 import Home from "./home"
 import Article from "./Article"
 import Category from "./tech.js"
+import Search from "./search"
 import Footer from "./stories/footer/footer"
 import {Route, Link} from "react-router-dom"
 
@@ -28,13 +29,19 @@ class App extends Component{
       data: filtered
     })
     console.log(this.state.data);
-  };
+  };  
 
-  
+  handler = (childData) => {
+    this.setState({
+      data: childData
+  })
+}
+
   render() {
     return (
-      <div>
-      <Nav link1="Tech" to1="/Tech" link2="Business" to2="/Business" link3="Health" to3="/Health" link4="Search" to4="Search"></Nav>
+      <>
+      <div className="footer-fixer">
+      <Nav link1="Tech" to1="/Tech" link2="Business" to2="/Business" link3="Health" to3="/Health" link4="Search" to4="/Search"></Nav>
       <Route exact path="/" render={RouterProps => 
         <Home data={this.state.data} {...RouterProps}/> 
         } />
@@ -42,17 +49,26 @@ class App extends Component{
         <Article data={this.state.data} {...RouterProps}/> 
         } />
       <Route path="/Tech" render={RouterProps => 
-        <Category category="technology"{...RouterProps}/> 
+        <Category update={this.handler} category="technology"{...RouterProps}/> 
         } />
       <Route path="/Business" render={RouterProps => 
-        <Category category="business"{...RouterProps}/> 
+        <Category update={this.handler} category="business"{...RouterProps}/> 
         } />
       <Route path="/Health" render={RouterProps => 
-        <Category category="health"{...RouterProps}/> 
+        <Category update={this.handler} category="health"{...RouterProps}/> 
         } />
-      
-      <Footer/>
+      <Route path="/Search" render={RouterProps => 
+        <Search update={this.handler} {...RouterProps}/> 
+          } />
+
       </div>
+        <div className="footwrap">
+        <Footer />
+      </div>
+
+        </>
+    
+      
       
 
   )

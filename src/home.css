@@ -8,7 +8,9 @@
 .img{
   width:400px;
   height:250px;
-  border:2px solid black
+  border:1px solid black;
+  margin:1.5em;
+
 }
 
 .text-content{
@@ -18,9 +20,28 @@
 .wrapper{
   display:flex;
   margin:5%;
+  background-color: #dedede;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  background-color: teal;
 }
 .textWrapper{
   display: flex;
   flex-direction: column;
   margin:5%;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .wrapper{
+    flex-direction: column;
+  }
+  .img{
+    width:85%;
+    height:45%;
+  }
+}
+
+@media (min-width: 768px) and (max-width:968px){}

@@ -21,5 +21,15 @@
 }
 
 .but{
-  margin:0;
+  margin-bottom:10%;
 }
+
+@media only screen and (max-width: 600px) {
+  .artImg{
+    margin-top:55%;
+    width:85%;
+    height:45%;
+  }
+}
+
+@media (min-width: 768px) and (max-width:968px){}

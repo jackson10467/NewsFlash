@@ -1,0 +1,12 @@
+.head{
+  margin-top:10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Search-con{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

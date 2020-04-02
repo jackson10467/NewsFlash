@@ -8,7 +8,7 @@ const Nav = (props) => (
     <nav className="nav">
     <Link to="/" className="l">
     <h1>NewsFlash</h1>
-      </Link>
+    </Link>
     </nav>
     <nav className="nav2">
       <Link to={props.to1} className="title">
