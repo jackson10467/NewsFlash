@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './search.css';
 import './home.css'
 import axios from "axios"
@@ -32,7 +32,6 @@ class Search extends Component {
       data: filtered
     })
     this.props.update(filtered)
-    console.log(this.state.data);
 
   }
 
@@ -62,7 +61,7 @@ class Search extends Component {
           </div>
           <div>{this.state.data.map((article, idx) => (
             <div className="wrapper">
-              <Link  to={"/article/" + article.publishedAt}><img className="img" src={article.urlToImage}></img></Link>
+              <Link  to={"/article/" + article.publishedAt}><img alt="article" className="img" src={article.urlToImage}></img></Link>
               <div className="textWrapper">
               <Link to={"/article/" + article.publishedAt}><h2 className="text-content">{article.title}</h2></Link>
               <p>{article.description}</p>
@@ -73,7 +72,6 @@ class Search extends Component {
       )
     }
 
-    console.log(this.state.search)
     return (
       <>
         <h1 className="head">Search for stories</h1>

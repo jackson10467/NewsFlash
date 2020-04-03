@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 import "./article.css";
 import Button from "./stories/button/button"
 
@@ -26,7 +25,7 @@ class Article extends Component{
         <div className="articleWrap">
           {this.props.data && article &&
             <>
-            <img className="artImg" src={article.urlToImage} />
+            <img alt="article"className="artImg" src={article.urlToImage} />
             <div className="articleText">
               <h2>{article.description}</h2>
               <p>{article.content}</p>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './home.css';
 // import axios from "axios"
 
@@ -10,7 +10,6 @@ class Home extends Component {
   
 
   render() {
-    console.log(this.props.data)
     if (this.props.data == null) {
       return (
         <h1>Wait for Data to Load</h1>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import axios from "axios"
 import Nav from "./stories/nav/nav"
@@ -8,7 +7,7 @@ import Article from "./Article"
 import Category from "./tech.js"
 import Search from "./search"
 import Footer from "./stories/footer/footer"
-import {Route, Link} from "react-router-dom"
+import {Route} from "react-router-dom"
 
 class App extends Component{
   constructor(props) {
@@ -24,11 +23,9 @@ class App extends Component{
     let filtered = response.data.articles.filter(article=>
       !article.title.includes('%')
     )
-    console.log(response.data.articles[0].description);
     this.setState({
       data: filtered
     })
-    console.log(this.state.data);
   };  
 
   handler = (childData) => {
